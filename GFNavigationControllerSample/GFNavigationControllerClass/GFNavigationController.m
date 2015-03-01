@@ -115,6 +115,11 @@ typedef void(^PendingBlock)(void);
     self.animationDuration = 0.3;
     
     self.startX = -200;
+    
+    
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
+        self.interactivePopGestureRecognizer.enabled = NO;
+    }
 }
 
 - (UIImage *)__captureScreen {

@@ -10,12 +10,16 @@
 
 @interface GFNavigationController : UINavigationController
 
+//defaul YE
 @property (nonatomic, assign) BOOL dragEnable;
 
+//default is 0.3
 @property (nonatomic, assign) NSTimeInterval animationDuration;
 
 @property (nonatomic, assign) CGFloat startX;
 
 @property (nonatomic, assign, getter = isTransitionInProcess) BOOL transitionInProcess;
 
+//default NO (>= iOS7)
+@property (nonatomic, assign) BOOL interactivePopGestureRecognizerEnabled;
 @end

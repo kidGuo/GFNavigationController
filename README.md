@@ -1,1 +1,3 @@
 # GFNavigationController
+
+实现NavigationController的滑动返回。解决了连续push和pop导致的crash
