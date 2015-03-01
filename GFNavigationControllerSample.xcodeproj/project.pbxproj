@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		209AD7A11AA2EBD00032954D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209AD7A01AA2EBD00032954D /* Foundation.framework */; };
+		209AD7A31AA2EBD00032954D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209AD7A21AA2EBD00032954D /* CoreGraphics.framework */; };
+		209AD7A51AA2EBD00032954D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209AD7A41AA2EBD00032954D /* UIKit.framework */; };
+		209AD7AB1AA2EBD00032954D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 209AD7A91AA2EBD00032954D /* InfoPlist.strings */; };
+		209AD7AD1AA2EBD00032954D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 209AD7AC1AA2EBD00032954D /* main.m */; };
+		209AD7B11AA2EBD00032954D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 209AD7B01AA2EBD00032954D /* AppDelegate.m */; };
+		209AD7B31AA2EBD00032954D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209AD7B21AA2EBD00032954D /* Images.xcassets */; };
+		209AD7BA1AA2EBD00032954D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209AD7B91AA2EBD00032954D /* XCTest.framework */; };
+		209AD7BB1AA2EBD00032954D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209AD7A01AA2EBD00032954D /* Foundation.framework */; };
+		209AD7BC1AA2EBD00032954D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209AD7A41AA2EBD00032954D /* UIKit.framework */; };
+		209AD7C41AA2EBD00032954D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 209AD7C21AA2EBD00032954D /* InfoPlist.strings */; };
+		209AD7C61AA2EBD00032954D /* GFNavigationControllerSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 209AD7C51AA2EBD00032954D /* GFNavigationControllerSampleTests.m */; };
+		209AD7DB1AA2EC5A0032954D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209AD7DA1AA2EC5A0032954D /* RootViewController.m */; };
+		209AD7DD1AA2EE130032954D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209AD7DC1AA2EE130032954D /* QuartzCore.framework */; };
+		209AD7E01AA2F42A0032954D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209AD7DF1AA2F42A0032954D /* DetailViewController.m */; };
+		20CD5FD11AA30B7A0034956D /* GFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD5FCC1AA30B7A0034956D /* GFBaseViewController.m */; };
+		20CD5FD21AA30B7A0034956D /* GFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD5FCE1AA30B7A0034956D /* GFNavigationController.m */; };
+		20CD5FD31AA30B7A0034956D /* NSMutableArray+GFNavigationControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD5FD01AA30B7A0034956D /* NSMutableArray+GFNavigationControlller.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		209AD7BD1AA2EBD00032954D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 209AD7951AA2EBD00032954D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 209AD79C1AA2EBD00032954D;
+			remoteInfo = GFNavigationControllerSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		209AD79D1AA2EBD00032954D /* GFNavigationControllerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFNavigationControllerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		209AD7A01AA2EBD00032954D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		209AD7A21AA2EBD00032954D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		209AD7A41AA2EBD00032954D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		209AD7A81AA2EBD00032954D /* GFNavigationControllerSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GFNavigationControllerSample-Info.plist"; sourceTree = "<group>"; };
+		209AD7AA1AA2EBD00032954D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		209AD7AC1AA2EBD00032954D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		209AD7AE1AA2EBD00032954D /* GFNavigationControllerSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GFNavigationControllerSample-Prefix.pch"; sourceTree = "<group>"; };
+		209AD7AF1AA2EBD00032954D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		209AD7B01AA2EBD00032954D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		209AD7B21AA2EBD00032954D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		209AD7B81AA2EBD00032954D /* GFNavigationControllerSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFNavigationControllerSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		209AD7B91AA2EBD00032954D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		209AD7C11AA2EBD00032954D /* GFNavigationControllerSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GFNavigationControllerSampleTests-Info.plist"; sourceTree = "<group>"; };
+		209AD7C31AA2EBD00032954D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		209AD7C51AA2EBD00032954D /* GFNavigationControllerSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFNavigationControllerSampleTests.m; sourceTree = "<group>"; };
+		209AD7D91AA2EC5A0032954D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		209AD7DA1AA2EC5A0032954D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		209AD7DC1AA2EE130032954D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		209AD7DE1AA2F42A0032954D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		209AD7DF1AA2F42A0032954D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		20CD5FCB1AA30B7A0034956D /* GFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GFBaseViewController.h; path = GFNavigationControllerClass/GFBaseViewController.h; sourceTree = "<group>"; };
+		20CD5FCC1AA30B7A0034956D /* GFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GFBaseViewController.m; path = GFNavigationControllerClass/GFBaseViewController.m; sourceTree = "<group>"; };
+		20CD5FCD1AA30B7A0034956D /* GFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GFNavigationController.h; path = GFNavigationControllerClass/GFNavigationController.h; sourceTree = "<group>"; };
+		20CD5FCE1AA30B7A0034956D /* GFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GFNavigationController.m; path = GFNavigationControllerClass/GFNavigationController.m; sourceTree = "<group>"; };
+		20CD5FCF1AA30B7A0034956D /* NSMutableArray+GFNavigationControlller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+GFNavigationControlller.h"; path = "GFNavigationControllerClass/NSMutableArray+GFNavigationControlller.h"; sourceTree = "<group>"; };
+		20CD5FD01AA30B7A0034956D /* NSMutableArray+GFNavigationControlller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+GFNavigationControlller.m"; path = "GFNavigationControllerClass/NSMutableArray+GFNavigationControlller.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		209AD79A1AA2EBD00032954D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209AD7DD1AA2EE130032954D /* QuartzCore.framework in Frameworks */,
+				209AD7A31AA2EBD00032954D /* CoreGraphics.framework in Frameworks */,
+				209AD7A51AA2EBD00032954D /* UIKit.framework in Frameworks */,
+				209AD7A11AA2EBD00032954D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		209AD7B51AA2EBD00032954D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209AD7BA1AA2EBD00032954D /* XCTest.framework in Frameworks */,
+				209AD7BC1AA2EBD00032954D /* UIKit.framework in Frameworks */,
+				209AD7BB1AA2EBD00032954D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		209AD7941AA2EBD00032954D = {
+			isa = PBXGroup;
+			children = (
+				209AD7A61AA2EBD00032954D /* GFNavigationControllerSample */,
+				209AD7BF1AA2EBD00032954D /* GFNavigationControllerSampleTests */,
+				209AD79F1AA2EBD00032954D /* Frameworks */,
+				209AD79E1AA2EBD00032954D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		209AD79E1AA2EBD00032954D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				209AD79D1AA2EBD00032954D /* GFNavigationControllerSample.app */,
+				209AD7B81AA2EBD00032954D /* GFNavigationControllerSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		209AD79F1AA2EBD00032954D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				209AD7DC1AA2EE130032954D /* QuartzCore.framework */,
+				209AD7A01AA2EBD00032954D /* Foundation.framework */,
+				209AD7A21AA2EBD00032954D /* CoreGraphics.framework */,
+				209AD7A41AA2EBD00032954D /* UIKit.framework */,
+				209AD7B91AA2EBD00032954D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		209AD7A61AA2EBD00032954D /* GFNavigationControllerSample */ = {
+			isa = PBXGroup;
+			children = (
+				209AD7AF1AA2EBD00032954D /* AppDelegate.h */,
+				209AD7B01AA2EBD00032954D /* AppDelegate.m */,
+				209AD7D91AA2EC5A0032954D /* RootViewController.h */,
+				209AD7DA1AA2EC5A0032954D /* RootViewController.m */,
+				209AD7DE1AA2F42A0032954D /* DetailViewController.h */,
+				209AD7DF1AA2F42A0032954D /* DetailViewController.m */,
+				209AD7D21AA2EC0D0032954D /* GFNavigationControllerClass */,
+				209AD7B21AA2EBD00032954D /* Images.xcassets */,
+				209AD7A71AA2EBD00032954D /* Supporting Files */,
+			);
+			path = GFNavigationControllerSample;
+			sourceTree = "<group>";
+		};
+		209AD7A71AA2EBD00032954D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				209AD7A81AA2EBD00032954D /* GFNavigationControllerSample-Info.plist */,
+				209AD7A91AA2EBD00032954D /* InfoPlist.strings */,
+				209AD7AC1AA2EBD00032954D /* main.m */,
+				209AD7AE1AA2EBD00032954D /* GFNavigationControllerSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		209AD7BF1AA2EBD00032954D /* GFNavigationControllerSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				209AD7C51AA2EBD00032954D /* GFNavigationControllerSampleTests.m */,
+				209AD7C01AA2EBD00032954D /* Supporting Files */,
+			);
+			path = GFNavigationControllerSampleTests;
+			sourceTree = "<group>";
+		};
+		209AD7C01AA2EBD00032954D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				209AD7C11AA2EBD00032954D /* GFNavigationControllerSampleTests-Info.plist */,
+				209AD7C21AA2EBD00032954D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		209AD7D21AA2EC0D0032954D /* GFNavigationControllerClass */ = {
+			isa = PBXGroup;
+			children = (
+				20CD5FCB1AA30B7A0034956D /* GFBaseViewController.h */,
+				20CD5FCC1AA30B7A0034956D /* GFBaseViewController.m */,
+				20CD5FCD1AA30B7A0034956D /* GFNavigationController.h */,
+				20CD5FCE1AA30B7A0034956D /* GFNavigationController.m */,
+				20CD5FCF1AA30B7A0034956D /* NSMutableArray+GFNavigationControlller.h */,
+				20CD5FD01AA30B7A0034956D /* NSMutableArray+GFNavigationControlller.m */,
+			);
+			name = GFNavigationControllerClass;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		209AD79C1AA2EBD00032954D /* GFNavigationControllerSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 209AD7C91AA2EBD00032954D /* Build configuration list for PBXNativeTarget "GFNavigationControllerSample" */;
+			buildPhases = (
+				209AD7991AA2EBD00032954D /* Sources */,
+				209AD79A1AA2EBD00032954D /* Frameworks */,
+				209AD79B1AA2EBD00032954D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GFNavigationControllerSample;
+			productName = GFNavigationControllerSample;
+			productReference = 209AD79D1AA2EBD00032954D /* GFNavigationControllerSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		209AD7B71AA2EBD00032954D /* GFNavigationControllerSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 209AD7CC1AA2EBD00032954D /* Build configuration list for PBXNativeTarget "GFNavigationControllerSampleTests" */;
+			buildPhases = (
+				209AD7B41AA2EBD00032954D /* Sources */,
+				209AD7B51AA2EBD00032954D /* Frameworks */,
+				209AD7B61AA2EBD00032954D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				209AD7BE1AA2EBD00032954D /* PBXTargetDependency */,
+			);
+			name = GFNavigationControllerSampleTests;
+			productName = GFNavigationControllerSampleTests;
+			productReference = 209AD7B81AA2EBD00032954D /* GFNavigationControllerSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		209AD7951AA2EBD00032954D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = kid;
+				TargetAttributes = {
+					209AD7B71AA2EBD00032954D = {
+						TestTargetID = 209AD79C1AA2EBD00032954D;
+					};
+				};
+			};
+			buildConfigurationList = 209AD7981AA2EBD00032954D /* Build configuration list for PBXProject "GFNavigationControllerSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 209AD7941AA2EBD00032954D;
+			productRefGroup = 209AD79E1AA2EBD00032954D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				209AD79C1AA2EBD00032954D /* GFNavigationControllerSample */,
+				209AD7B71AA2EBD00032954D /* GFNavigationControllerSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		209AD79B1AA2EBD00032954D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209AD7AB1AA2EBD00032954D /* InfoPlist.strings in Resources */,
+				209AD7B31AA2EBD00032954D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		209AD7B61AA2EBD00032954D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209AD7C41AA2EBD00032954D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		209AD7991AA2EBD00032954D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CD5FD11AA30B7A0034956D /* GFBaseViewController.m in Sources */,
+				209AD7B11AA2EBD00032954D /* AppDelegate.m in Sources */,
+				20CD5FD21AA30B7A0034956D /* GFNavigationController.m in Sources */,
+				20CD5FD31AA30B7A0034956D /* NSMutableArray+GFNavigationControlller.m in Sources */,
+				209AD7AD1AA2EBD00032954D /* main.m in Sources */,
+				209AD7DB1AA2EC5A0032954D /* RootViewController.m in Sources */,
+				209AD7E01AA2F42A0032954D /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		209AD7B41AA2EBD00032954D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209AD7C61AA2EBD00032954D /* GFNavigationControllerSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		209AD7BE1AA2EBD00032954D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 209AD79C1AA2EBD00032954D /* GFNavigationControllerSample */;
+			targetProxy = 209AD7BD1AA2EBD00032954D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		209AD7A91AA2EBD00032954D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209AD7AA1AA2EBD00032954D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		209AD7C21AA2EBD00032954D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209AD7C31AA2EBD00032954D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		209AD7C71AA2EBD00032954D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		209AD7C81AA2EBD00032954D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		209AD7CA1AA2EBD00032954D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GFNavigationControllerSample/GFNavigationControllerSample-Prefix.pch";
+				INFOPLIST_FILE = "GFNavigationControllerSample/GFNavigationControllerSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		209AD7CB1AA2EBD00032954D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GFNavigationControllerSample/GFNavigationControllerSample-Prefix.pch";
+				INFOPLIST_FILE = "GFNavigationControllerSample/GFNavigationControllerSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		209AD7CD1AA2EBD00032954D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GFNavigationControllerSample.app/GFNavigationControllerSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GFNavigationControllerSample/GFNavigationControllerSample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GFNavigationControllerSampleTests/GFNavigationControllerSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		209AD7CE1AA2EBD00032954D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GFNavigationControllerSample.app/GFNavigationControllerSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GFNavigationControllerSample/GFNavigationControllerSample-Prefix.pch";
+				INFOPLIST_FILE = "GFNavigationControllerSampleTests/GFNavigationControllerSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		209AD7981AA2EBD00032954D /* Build configuration list for PBXProject "GFNavigationControllerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209AD7C71AA2EBD00032954D /* Debug */,
+				209AD7C81AA2EBD00032954D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		209AD7C91AA2EBD00032954D /* Build configuration list for PBXNativeTarget "GFNavigationControllerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209AD7CA1AA2EBD00032954D /* Debug */,
+				209AD7CB1AA2EBD00032954D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		209AD7CC1AA2EBD00032954D /* Build configuration list for PBXNativeTarget "GFNavigationControllerSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209AD7CD1AA2EBD00032954D /* Debug */,
+				209AD7CE1AA2EBD00032954D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 209AD7951AA2EBD00032954D /* Project object */;
+}
