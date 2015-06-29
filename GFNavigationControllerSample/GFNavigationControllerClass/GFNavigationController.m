@@ -26,7 +26,7 @@ typedef void(^PendingBlock)(void);
 
 @property (nonatomic, strong) NSMutableArray *screenShots;
 @property (nonatomic, assign) CGPoint startTouchPoint;
-@property (nonatomic, copy) NSMutableArray *pendingBlocks;
+@property (nonatomic, strong) NSMutableArray *pendingBlocks;
 
 @end
 
@@ -51,6 +51,14 @@ typedef void(^PendingBlock)(void);
     
     UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
     [self.view addGestureRecognizer:panRecognizer];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning
@@ -103,6 +111,14 @@ typedef void(^PendingBlock)(void);
     }
 }
 
+- (void)setInteractivePopGestureRecognizerEnabled:(BOOL)interactivePopGestureRecognizerEnabled {
+    _interactivePopGestureRecognizerEnabled = interactivePopGestureRecognizerEnabled;
+    
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
+        self.interactivePopGestureRecognizer.enabled = interactivePopGestureRecognizerEnabled;
+    }
+}
+
 
 #pragma mark - Private Methods
 
@@ -115,7 +131,7 @@ typedef void(^PendingBlock)(void);
     self.animationDuration = 0.3;
     
     self.startX = -200;
-    
+
     
     if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
         self.interactivePopGestureRecognizer.enabled = NO;
@@ -126,7 +142,7 @@ typedef void(^PendingBlock)(void);
 
     UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, self.view.opaque, 0);
     CGContextRef context = UIGraphicsGetCurrentContext();
-    [self.view.layer renderInContext:context];
+    [[KEY_WINDOW layer] renderInContext:context];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
@@ -143,7 +159,7 @@ typedef void(^PendingBlock)(void);
     self.view.frame = frame;
     
     
-    CGFloat rate = fabsf(self.startX) / CGRectGetWidth(self.view.frame);
+    CGFloat rate = fabs(self.startX) / CGRectGetWidth(self.view.frame);
     CGFloat distance = rate * x;
     self.lastScreenImageView.frame = CGRectMake(self.startX + distance, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
 }
@@ -267,7 +283,7 @@ typedef void(^PendingBlock)(void);
     __weak typeof(self) weakSelf = self;
     
     [self __addTransitionBlock:^{
-        
+
         [weakSelf.screenShots addObject:[weakSelf __captureScreen]];
         
         [super pushViewController:viewController animated:animated];
@@ -279,7 +295,7 @@ typedef void(^PendingBlock)(void);
     __weak typeof(self)weakSelf = self;
     
     [self __addTransitionBlock:^{
-        
+
         [weakSelf.screenShots removeLastObject];
         
         UIViewController *viewController = [super popViewControllerAnimated:animated];
@@ -296,7 +312,7 @@ typedef void(^PendingBlock)(void);
     __weak typeof(self)weakSelf = self;
     
     [self __addTransitionBlock:^{
-        
+
         if ([weakSelf.viewControllers containsObject:viewController]) {
             
             NSInteger index = [weakSelf.viewControllers indexOfObject:viewController];
@@ -321,10 +337,10 @@ typedef void(^PendingBlock)(void);
 
 - (NSArray *)popToRootViewControllerAnimated:(BOOL)animated {
  
-    __weak typeof(self) weakSelf = self;
+    __weak typeof(self)weakSelf = self;
     
     [self __addTransitionBlock:^{
-        
+
         if (weakSelf.screenShots.count) {
             [weakSelf.screenShots gf_removeObjectsFromIndex:0];
         }

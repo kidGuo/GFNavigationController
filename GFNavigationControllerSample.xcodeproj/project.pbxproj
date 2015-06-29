@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207B34031B3A790000932736 /* UIViewController+GFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207B34021B3A790000932736 /* UIViewController+GFNavigationController.m */; };
 		209AD7A11AA2EBD00032954D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209AD7A01AA2EBD00032954D /* Foundation.framework */; };
 		209AD7A31AA2EBD00032954D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209AD7A21AA2EBD00032954D /* CoreGraphics.framework */; };
 		209AD7A51AA2EBD00032954D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209AD7A41AA2EBD00032954D /* UIKit.framework */; };
@@ -22,7 +23,6 @@
 		209AD7DB1AA2EC5A0032954D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209AD7DA1AA2EC5A0032954D /* RootViewController.m */; };
 		209AD7DD1AA2EE130032954D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209AD7DC1AA2EE130032954D /* QuartzCore.framework */; };
 		209AD7E01AA2F42A0032954D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209AD7DF1AA2F42A0032954D /* DetailViewController.m */; };
-		20CD5FD11AA30B7A0034956D /* GFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD5FCC1AA30B7A0034956D /* GFBaseViewController.m */; };
 		20CD5FD21AA30B7A0034956D /* GFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD5FCE1AA30B7A0034956D /* GFNavigationController.m */; };
 		20CD5FD31AA30B7A0034956D /* NSMutableArray+GFNavigationControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD5FD01AA30B7A0034956D /* NSMutableArray+GFNavigationControlller.m */; };
 /* End PBXBuildFile section */
@@ -38,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		207B34011B3A790000932736 /* UIViewController+GFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+GFNavigationController.h"; path = "GFNavigationControllerClass/UIViewController+GFNavigationController.h"; sourceTree = "<group>"; };
+		207B34021B3A790000932736 /* UIViewController+GFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+GFNavigationController.m"; path = "GFNavigationControllerClass/UIViewController+GFNavigationController.m"; sourceTree = "<group>"; };
 		209AD79D1AA2EBD00032954D /* GFNavigationControllerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFNavigationControllerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209AD7A01AA2EBD00032954D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		209AD7A21AA2EBD00032954D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,8 +61,6 @@
 		209AD7DC1AA2EE130032954D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		209AD7DE1AA2F42A0032954D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		209AD7DF1AA2F42A0032954D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		20CD5FCB1AA30B7A0034956D /* GFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GFBaseViewController.h; path = GFNavigationControllerClass/GFBaseViewController.h; sourceTree = "<group>"; };
-		20CD5FCC1AA30B7A0034956D /* GFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GFBaseViewController.m; path = GFNavigationControllerClass/GFBaseViewController.m; sourceTree = "<group>"; };
 		20CD5FCD1AA30B7A0034956D /* GFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GFNavigationController.h; path = GFNavigationControllerClass/GFNavigationController.h; sourceTree = "<group>"; };
 		20CD5FCE1AA30B7A0034956D /* GFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GFNavigationController.m; path = GFNavigationControllerClass/GFNavigationController.m; sourceTree = "<group>"; };
 		20CD5FCF1AA30B7A0034956D /* NSMutableArray+GFNavigationControlller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+GFNavigationControlller.h"; path = "GFNavigationControllerClass/NSMutableArray+GFNavigationControlller.h"; sourceTree = "<group>"; };
@@ -171,8 +171,8 @@
 		209AD7D21AA2EC0D0032954D /* GFNavigationControllerClass */ = {
 			isa = PBXGroup;
 			children = (
-				20CD5FCB1AA30B7A0034956D /* GFBaseViewController.h */,
-				20CD5FCC1AA30B7A0034956D /* GFBaseViewController.m */,
+				207B34011B3A790000932736 /* UIViewController+GFNavigationController.h */,
+				207B34021B3A790000932736 /* UIViewController+GFNavigationController.m */,
 				20CD5FCD1AA30B7A0034956D /* GFNavigationController.h */,
 				20CD5FCE1AA30B7A0034956D /* GFNavigationController.m */,
 				20CD5FCF1AA30B7A0034956D /* NSMutableArray+GFNavigationControlller.h */,
@@ -276,11 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20CD5FD11AA30B7A0034956D /* GFBaseViewController.m in Sources */,
 				209AD7B11AA2EBD00032954D /* AppDelegate.m in Sources */,
 				20CD5FD21AA30B7A0034956D /* GFNavigationController.m in Sources */,
 				20CD5FD31AA30B7A0034956D /* NSMutableArray+GFNavigationControlller.m in Sources */,
 				209AD7AD1AA2EBD00032954D /* main.m in Sources */,
+				207B34031B3A790000932736 /* UIViewController+GFNavigationController.m in Sources */,
 				209AD7DB1AA2EC5A0032954D /* RootViewController.m in Sources */,
 				209AD7E01AA2F42A0032954D /* DetailViewController.m in Sources */,
 			);
@@ -402,6 +402,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GFNavigationControllerSample/GFNavigationControllerSample-Prefix.pch";
 				INFOPLIST_FILE = "GFNavigationControllerSample/GFNavigationControllerSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -415,6 +416,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GFNavigationControllerSample/GFNavigationControllerSample-Prefix.pch";
 				INFOPLIST_FILE = "GFNavigationControllerSample/GFNavigationControllerSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

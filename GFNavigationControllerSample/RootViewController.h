@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 kid. All rights reserved.
 //
 
-#import "GFBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface RootViewController : GFBaseViewController
+@interface RootViewController : UIViewController
 
 @end

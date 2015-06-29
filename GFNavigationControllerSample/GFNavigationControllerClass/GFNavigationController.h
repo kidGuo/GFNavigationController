@@ -10,7 +10,7 @@
 
 @interface GFNavigationController : UINavigationController
 
-//defaul YE
+//defaul YES
 @property (nonatomic, assign) BOOL dragEnable;
 
 //default is 0.3
@@ -22,4 +22,5 @@
 
 //default NO (>= iOS7)
 @property (nonatomic, assign) BOOL interactivePopGestureRecognizerEnabled;
+
 @end

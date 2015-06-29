@@ -51,12 +51,6 @@
     [super viewWillAppear:animated];
     
     [self.navigationController.navigationBar setBackgroundImage:[self imageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];
-    
-    
-    //push
-    
-//    UIViewController *controller = [[UIViewController alloc] init];
-//    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,6 +66,7 @@
     
     DetailViewController *vc = [[DetailViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 - (void)doStart:(id)sender
@@ -83,20 +78,20 @@
         r = rand();
         int x = r % 10;
         if (x == 3) {
-            NSLog(@"popToRoot");
+//            NSLog(@"popToRoot");
             [self popToRoot];
         }
         else if (x == 4) {
-            NSLog(@"popTo");
+//            NSLog(@"popTo");
             [self popTo];
         }
         else
         if (x == 5 || x == 8) {
-            NSLog(@"pop");
+//            NSLog(@"pop");
             [self pop];
         }
         else {
-            NSLog(@"push");
+//            NSLog(@"push");
             [self push];
         }
     }
@@ -127,6 +122,7 @@
 - (void)popToRoot
 {
     [self.navigationController popToRootViewControllerAnimated:YES];
+    
 }
 
 - (UIImage *)imageWithColor:(UIColor *)color {

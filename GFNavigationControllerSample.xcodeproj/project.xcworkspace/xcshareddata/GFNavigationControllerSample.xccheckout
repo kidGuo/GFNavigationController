@@ -10,29 +10,29 @@
 	<string>GFNavigationControllerSample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>96BEDB7B-4DF3-442A-9817-0376D2D97CCA</key>
-		<string>https://github.com/kidGuo/GFNavigationController.git</string>
+		<key>4FEE9FB5F612925802AF4CDA0C57DE6D584CBB31</key>
+		<string>https://github.com/kidGuo/GFNavigationController</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>GFNavigationControllerSample.xcodeproj/project.xcworkspace</string>
+	<string>GFNavigationControllerSample.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>96BEDB7B-4DF3-442A-9817-0376D2D97CCA</key>
+		<key>4FEE9FB5F612925802AF4CDA0C57DE6D584CBB31</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/kidGuo/GFNavigationController.git</string>
+	<string>https://github.com/kidGuo/GFNavigationController</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>96BEDB7B-4DF3-442A-9817-0376D2D97CCA</string>
+	<string>4FEE9FB5F612925802AF4CDA0C57DE6D584CBB31</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>96BEDB7B-4DF3-442A-9817-0376D2D97CCA</string>
+			<string>4FEE9FB5F612925802AF4CDA0C57DE6D584CBB31</string>
 			<key>IDESourceControlWCCName</key>
 			<string>GFNavigationController</string>
 		</dict>
